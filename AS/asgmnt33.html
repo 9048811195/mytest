@@ -1,0 +1,31 @@
+
+<html>
+<head>
+	<title>Jsassignment 33</title>
+    <script>
+      function is_checked()
+      {
+        var graduate=document.getElementById('graduate').checked;
+        var postgraduate=document.getElementById('postgraduate').checked; 
+        if(graduate==false && postgraduate==false)
+        {
+          document.write("Please choose your qualification");
+          return false; 
+        }
+        else
+        {
+          return true;
+        }
+      }
+    </script>
+</head>
+<body>
+    <body bgcolor="#18ffff">
+    <form action="submit.html" method="get" onsubmit="return is_checked()">
+        <h1>Check Box Validation</h1>
+         Qualification:<input type="checkbox" name="qual" value="graduate" id="graduate"/>Graduate
+          <input type="checkbox" name="qual" value="postgraduate" id="postgraduate">Postgraduate
+          <input type="submit" value="Submit"><br/><br/>
+    </form>
+</body>
+</html
